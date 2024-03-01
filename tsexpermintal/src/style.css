@@ -12,10 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-canvas{
-  border: #1a1a1a 2px solid;
-}
-
+canvas{border: #1a1a1a 1px solid;}
 a {
   font-weight: 500;
   color: #646cff;
@@ -55,7 +52,7 @@ h1 {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+  filter: drop-shadow(0 0 2em #3178c6aa);
 }
 
 .card {
