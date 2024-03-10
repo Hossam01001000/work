@@ -1,3 +1,9 @@
+:root{
+  --imagefirstwidth:1248px;
+  --efw:12px;
+  --efh:18px;
+  --neww:3000px
+}
 body{
   margin: 0;
   display:flex;
@@ -9,29 +15,18 @@ body{
   /* background-color: aqua; */
 }
 
-#app{
-  height: 100vh;
-  display: block;
-  width: 100%;
-  background-color: rgb(244, 224, 211);
-}
 img{
-  /* width: 1500px; */
+  width: 2000px;
+  display: block;
 }
-
-.eye{
-  opacity: 1;
-  transform: translateX(80px);
-  transition: all .3s;
+.box{
+  /* border: 25px red solid; */
+  position: relative;
 }
-.off {
-  /* opacity: 0; */
-  transform:none;
-  /* transform: translateY(40px); */
-}
-button{
-  padding: 15px;
-  font-size: 40px;
-  margin: 20px;
-
+svg{
+  position: absolute;
+  aspect-ratio: 12/18;
+  top: 0;
+  left: 0;
+  width:200px
 }
