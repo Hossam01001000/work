@@ -1,11 +1,13 @@
 import './style.css'
-let rpw=2000
+let rpw=400
 let spw=1248
 
-let eyesxs=[739,665,586,518]
+let eyesxs=[739,665,584,518]
 let eyeys=[302,302,321,321]
 let eyesize=[12,18]
 let newHeight=(rpw*702)/spw
+let translationsX=[40,40,-37,-37]
+let translationsY=[-3,-3,12,12]
 // let svg= document.querySelector('svg')
 let eyes = document.querySelectorAll('svg')
 // console.log(svg)
@@ -22,8 +24,22 @@ for(let eye of eyes){
    }
 }
 function onhov(){
+  let k=0
+    for(let eye of eyes){
+        eye.style.transform=`translate(${(translationsX[k]*rpw)/spw}px, ${(translationsY[k]*rpw)/spw}px`;
+
+        k++;
+
+    }
 
 }
+let img = document.querySelector('.butt')
+img?.addEventListener('mouseenter', onhov)
+img?.addEventListener('mouseleave',()=>{
+    for(let eye of eyes){
+        eye.style.transform=`translate(0px,0px)`
+    }
+})
 // if(svg?.style.width !== undefined){
 //     console.log(svg.style.width)
 //     svg.style.width=`${(12*3000)/1248}`
