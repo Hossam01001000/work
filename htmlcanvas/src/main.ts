@@ -11,11 +11,5 @@ function draw(){
   ctx.lineDashOffset=x
   ctx.strokeRect(100,100,100,100)
 }
-function march(){
-  x++;
-  draw()
-  setTimeout(march,10)
 
-}
-// march()
 draw()
